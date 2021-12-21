@@ -1,0 +1,475 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4752955580595410735
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4752955580595410734}
+  - component: {fileID: 4752955580595410729}
+  m_Layer: 0
+  m_Name: OrbManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4752955580595410734
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4752955580595410735}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4752955582240408124}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4752955580595410729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4752955580595410735}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80cad2514a06e73418dab75972925e94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  orbs:
+  - {fileID: 8532564742094494136, guid: f47fb6fb5eab4f04abd372ad2b16e473, type: 3}
+  - {fileID: 1850298141285643164, guid: 0e917daea4f94d34a8923f8b8f9d3a2b, type: 3}
+  - {fileID: 2208941979065708847, guid: f35a8f7bd87c614428611560f76ab1e4, type: 3}
+  - {fileID: 6194352567852098175, guid: 722ac564007f9fa4e8ae300b03681691, type: 3}
+  - {fileID: 3967250087928362582, guid: 18ca10aa2b44c9c48beb515599c17630, type: 3}
+  - {fileID: 3967250087928362582, guid: 288c3df87471f714091001ad9bfc02da, type: 3}
+  - {fileID: 3967250087928362582, guid: d55cd5c17ec4f104ab1e2ff2dd54daf4, type: 3}
+  - {fileID: 3967250087928362582, guid: 33164413d3ba5da4aada8a8bdf81eb94, type: 3}
+  - {fileID: 3967250087928362582, guid: b4094aae8124b7f4fa6d0cd197bcd19e, type: 3}
+  - {fileID: 3967250087928362582, guid: cbe1085dfd9a8dd499effa654a1a9692, type: 3}
+  - {fileID: 3967250087928362582, guid: c29d387065002544eb09a73670188a90, type: 3}
+  - {fileID: 3967250087928362582, guid: 4abc46b34dfb41d4db839d9aad3d0d8d, type: 3}
+--- !u!1 &4752955580901940723
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4752955580901940722}
+  - component: {fileID: 4752955580901940717}
+  m_Layer: 0
+  m_Name: SoundManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4752955580901940722
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4752955580901940723}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4752955582240408124}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4752955580901940717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4752955580901940723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4b02b577983ca64ea16e54ff6d6ad10, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  globalVolume: 0.251
+  sounds:
+  - name: PistolReload
+    clip: {fileID: 8300000, guid: a2bdc071975fbc54a87e55b71042bbd7, type: 3}
+    volume: 1
+    loop: 0
+    multiShot: 0
+    source: {fileID: 0}
+  - name: PistolShoot
+    clip: {fileID: 8300000, guid: f8ac444ad8f697e44b4024bf03a46db8, type: 3}
+    volume: 1
+    loop: 0
+    multiShot: 0
+    source: {fileID: 0}
+  - name: DShotgunReload
+    clip: {fileID: 8300000, guid: 3d4a023cc404adf42b42490d213b0050, type: 3}
+    volume: 1
+    loop: 0
+    multiShot: 0
+    source: {fileID: 0}
+  - name: DShotgunShoot
+    clip: {fileID: 8300000, guid: 188ccdab74902254c8939811d37808c2, type: 3}
+    volume: 1
+    loop: 0
+    multiShot: 1
+    source: {fileID: 0}
+  - name: DMRShoot
+    clip: {fileID: 8300000, guid: 7667d239d18e20f4fa008b8719851cd7, type: 3}
+    volume: 1
+    loop: 0
+    multiShot: 0
+    source: {fileID: 0}
+  - name: DMRReload
+    clip: {fileID: 8300000, guid: e91041f65a46d8f4cb3dbe5d3cb943a6, type: 3}
+    volume: 1
+    loop: 0
+    multiShot: 0
+    source: {fileID: 0}
+  - name: LMGShoot
+    clip: {fileID: 8300000, guid: 85de9bc3d5c1a9b4ab296102742db654, type: 3}
+    volume: 1
+    loop: 0
+    multiShot: 0
+    source: {fileID: 0}
+  - name: LMGReload
+    clip: {fileID: 8300000, guid: 0b5fd74d07940f34d86c77a8f82d5872, type: 3}
+    volume: 1
+    loop: 0
+    multiShot: 0
+    source: {fileID: 0}
+  - name: KnifeShoot
+    clip: {fileID: 8300000, guid: 88ff87a09d5db9644b7b333d67c98d32, type: 3}
+    volume: 1
+    loop: 0
+    multiShot: 0
+    source: {fileID: 0}
+  - name: SniperShoot
+    clip: {fileID: 8300000, guid: 85ad47f45ad26e84abe43df427b88839, type: 3}
+    volume: 1
+    loop: 0
+    multiShot: 0
+    source: {fileID: 0}
+  - name: SniperReload
+    clip: {fileID: 8300000, guid: 65cb80c62863f204785fa04778135352, type: 3}
+    volume: 1
+    loop: 0
+    multiShot: 0
+    source: {fileID: 0}
+  - name: SMGShoot
+    clip: {fileID: 8300000, guid: b427559a9c0ffb649a15e7e658e87733, type: 3}
+    volume: 1
+    loop: 0
+    multiShot: 0
+    source: {fileID: 0}
+  - name: SMGReload
+    clip: {fileID: 8300000, guid: e32ee85f4b5a86a43960ff8b0dce2f0e, type: 3}
+    volume: 1
+    loop: 0
+    multiShot: 0
+    source: {fileID: 0}
+  - name: GLauncherShoot
+    clip: {fileID: 8300000, guid: dfbec116391218b4ca8b08584ac721f4, type: 3}
+    volume: 1
+    loop: 0
+    multiShot: 0
+    source: {fileID: 0}
+  - name: GLauncherReload
+    clip: {fileID: 8300000, guid: 03610d2a0937cb14a98e59f8a6460475, type: 3}
+    volume: 1
+    loop: 0
+    multiShot: 0
+    source: {fileID: 0}
+  - name: GLauncherExplode
+    clip: {fileID: 8300000, guid: 2836220d0113f464e9cd244470e67cb5, type: 3}
+    volume: 1
+    loop: 0
+    multiShot: 0
+    source: {fileID: 0}
+  - name: FlameShoot
+    clip: {fileID: 8300000, guid: 23ba3b086453bde419936f04bf0bd8e9, type: 3}
+    volume: 1
+    loop: 0
+    multiShot: 1
+    source: {fileID: 0}
+  - name: FlameReload
+    clip: {fileID: 8300000, guid: 1e91a5b328204684f8f355b4bf9fa898, type: 3}
+    volume: 1
+    loop: 0
+    multiShot: 0
+    source: {fileID: 0}
+  - name: HitSound
+    clip: {fileID: 8300000, guid: f1baa9229afadd84d9ae5a9e209b1583, type: 3}
+    volume: 1
+    loop: 0
+    multiShot: 0
+    source: {fileID: 0}
+  - name: GravPower
+    clip: {fileID: 8300000, guid: 2306e6d6af1d9be499fd15b687600ebf, type: 3}
+    volume: 1
+    loop: 0
+    multiShot: 0
+    source: {fileID: 0}
+  - name: HealPower
+    clip: {fileID: 8300000, guid: 2f49892cfcdd48843877efd263b36d25, type: 3}
+    volume: 1
+    loop: 0
+    multiShot: 0
+    source: {fileID: 0}
+  - name: MaxPower
+    clip: {fileID: 8300000, guid: 7835b927a559e16468c66687b4f54194, type: 3}
+    volume: 1
+    loop: 0
+    multiShot: 0
+    source: {fileID: 0}
+  - name: SpeedPower
+    clip: {fileID: 8300000, guid: 58e91a8affab16f449539fbd380a49aa, type: 3}
+    volume: 1
+    loop: 0
+    multiShot: 0
+    source: {fileID: 0}
+  - name: ChargeShoot
+    clip: {fileID: 8300000, guid: d066003ad4914c248af1f70352f05629, type: 3}
+    volume: 1
+    loop: 0
+    multiShot: 0
+    source: {fileID: 0}
+  - name: ChargeReload
+    clip: {fileID: 8300000, guid: 9786e7966d022334b9a6ae44c3245e8a, type: 3}
+    volume: 1
+    loop: 0
+    multiShot: 0
+    source: {fileID: 0}
+  - name: ChargeClick
+    clip: {fileID: 8300000, guid: f778f4df7de2da9458cd3a3eda36b07f, type: 3}
+    volume: 1
+    loop: 0
+    multiShot: 0
+    source: {fileID: 0}
+  - name: ChargeOne
+    clip: {fileID: 8300000, guid: c52764fe1e57ecb499228c14e610134b, type: 3}
+    volume: 1
+    loop: 1
+    multiShot: 0
+    source: {fileID: 0}
+  - name: ChargeTwo
+    clip: {fileID: 8300000, guid: 790f4f3b98343c644b46eaa8ecdbb6d9, type: 3}
+    volume: 1
+    loop: 1
+    multiShot: 0
+    source: {fileID: 0}
+  - name: ChargeThree
+    clip: {fileID: 8300000, guid: a160cd552c90fca439e96fd56a8d72f9, type: 3}
+    volume: 1
+    loop: 1
+    multiShot: 0
+    source: {fileID: 0}
+  - name: GunPickUp
+    clip: {fileID: 8300000, guid: 440b92862ee641644b62f411d49bddc4, type: 3}
+    volume: 1
+    loop: 0
+    multiShot: 0
+    source: {fileID: 0}
+  - name: AmmoPickUp
+    clip: {fileID: 8300000, guid: 1155a2da5c841164294c29e85d9e8c77, type: 3}
+    volume: 1
+    loop: 0
+    multiShot: 0
+    source: {fileID: 0}
+  songs:
+  - name: 396-04
+    clip: {fileID: 8300000, guid: 02beb0d7596c00f46a45135ced7a498f, type: 3}
+    volume: 0.25
+    loop: 1
+    multiShot: 0
+    source: {fileID: 0}
+  - name: Backwards
+    clip: {fileID: 8300000, guid: f8ed8fd37c0dbf04bb24a61ac8fd744f, type: 3}
+    volume: 0.25
+    loop: 1
+    multiShot: 0
+    source: {fileID: 0}
+  - name: Fizzy Water
+    clip: {fileID: 8300000, guid: 0006fe8b01c942344b6d0bd5a6d5d3ca, type: 3}
+    volume: 0.25
+    loop: 1
+    multiShot: 0
+    source: {fileID: 0}
+  - name: High Octane
+    clip: {fileID: 8300000, guid: e94941f9f05068441b3c92102491365c, type: 3}
+    volume: 0.25
+    loop: 1
+    multiShot: 0
+    source: {fileID: 0}
+  - name: Moose
+    clip: {fileID: 8300000, guid: 9b1aa6ba28cf7824dbd67715e69a7231, type: 3}
+    volume: 0.25
+    loop: 1
+    multiShot: 0
+    source: {fileID: 0}
+  - name: Night Level
+    clip: {fileID: 8300000, guid: a06a48bbb24172548a667210cf3399c0, type: 3}
+    volume: 0.25
+    loop: 1
+    multiShot: 0
+    source: {fileID: 0}
+--- !u!1 &4752955581473802863
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4752955581473802862}
+  - component: {fileID: 4752955581473802857}
+  - component: {fileID: 4752955581473802856}
+  m_Layer: 0
+  m_Name: PlayerManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4752955581473802862
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4752955581473802863}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4752955582240408124}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4752955581473802857
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4752955581473802863}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 838e30aa6180d5b4ab806372048f0667, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerPrefab: {fileID: 420186935283767804, guid: 4c9ed575632a4f6428fba821e20d52bf, type: 3}
+  canRespawn: 1
+  spawning: 0
+--- !u!114 &4752955581473802856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4752955581473802863}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  observableSearch: 2
+  ObservedComponents: []
+  sceneViewId: 1
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
+--- !u!1 &4752955582240408125
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4752955582240408124}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4752955582240408124
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4752955582240408125}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 10.106291, y: 16.902527, z: -10.0127945}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4752955581473802862}
+  - {fileID: 4752955580901940722}
+  - {fileID: 4752955580595410734}
+  - {fileID: 4752955582286715159}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &4752955582286715156
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4752955582286715159}
+  - component: {fileID: 4752955582286715158}
+  m_Layer: 0
+  m_Name: BotManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4752955582286715159
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4752955582286715156}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4752955582240408124}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4752955582286715158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4752955582286715156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 395f0508405896a43afae3ef5b60a9dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bots:
+  - {fileID: 7243480886249735903, guid: 0306b6ffb1096bf40af0f0d7b1da4c22, type: 3}
+  - {fileID: 2792864073184626264, guid: 160ed79e6b1edd3458ec929503af0161, type: 3}
